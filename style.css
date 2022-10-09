@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Overpass';
+    margin-top: 10px;
+    min-height: 100vh;
+    
+}
+
+.container-main, .thank-you {
+    background-color: hsl(213, 24%, 15%);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 364px; 
+    height: 368px;
+}
+.container-main img {
+    background-color: hsl(216, 20%, 22%);
+    margin-top: 0.5rem;
+    width: 22px;
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 7px;
+}
+.container-main h2 {
+    padding-top: 25px;
+    font-size: 28px;
+    color: var(--White);
+    margin-left: 8px;
+}
+.container-main p {
+    color: var(--Medium-Grey);
+    padding-top: 12px;
+    line-height: 1.6;
+    margin-left: 8px;
+    font-size: 15px;  
+    font-weight: 700; 
+}
+.buttons-rate {
+    display: flex;
+}
+ul li button {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    background-color: hsl(216, 20%, 22%);
+    color: var(--White);
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-top: 1.45rem;
+    margin-right: 14.5px;
+}
+
+.container-main ul li button:hover {
+    background-color: var(--Orange);
+}
+.container-main ul li button:focus {
+    background-color: var(--Light-Grey);
+}
+
+.submit-button {
+    width: 95%;
+    margin-top: 2rem;
+    margin-left: 7px;
+    padding-top: 4px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 16px;
+    font-family: 'Overpass';
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+ 
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thank-you img {
+    padding-top: 1.4rem;
+    padding-bottom: 1rem;
+}
+.hidden {
+    display: none;
+}
+#rating-text {
+    margin-top: 1.1rem;
+    padding: 3px;
+    color: var(--Orange);
+    background-color: hsl(216, 20%, 22%);
+    border-radius: 1rem;
+    width: 50%;
+    text-align: center;
+    font-weight: 400;
+}
+.thank-you h3 {
+    padding-top: 2.2rem;
+    font-size: 28px;
+    color: var(--White);
+}
+
+.thank-you p {
+    width: 100%;
+    font-size: 16px; 
+    color: var(--Medium-Grey);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-left: 8px; 
+    text-align: center;
+    padding-top: 7px;
+}
+
+@media(max-width: 400px) {
+
+    .container-main {
+        width: 280px;
+        height: 310px;
+        transform: translateY(-70px);
+    }
+    .container-main img{
+        width: 14px;
+        margin-left: -4px;
+        margin-top: 0px;
+        
+    }
+
+    .container-main h2 {
+        padding-top: 0.8rem;
+        font-size: 23.8px;
+        margin-left: 0px;
+    }
+
+    .container-main p {
+        margin-left: 0px;
+        font-size: 13px;
+    }
+    ul li button{
+        width: 44px;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 1.7rem;
+    }
+    .submit-button {
+        margin-top: 1.5rem;
+        font-size: 13px;
+        letter-spacing: 2px;
+        width: 99%;
+        margin-left: 0px;
+    }
+    .thank-you{
+        width: 280px;
+        height: 312px;
+        transform: translateY(-42px);
+    }
+    .thank-you img {
+        width: max-content;
+        height: 97px;
+        padding-top: 0.7rem;
+    }
+    #rating-text {
+        margin-top: 0.55rem;
+        font-size: 14px;
+        width: 60%;
+    }
+    .thank-you h3 {
+        font-size: 23px;
+        padding-top: 1.7rem;
+    }
+    .thank-you p {
+        margin-top: 0.5rem;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+}   
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: var(--White);
+    font-style: italic;
+    font-family: 'Overpass';
+    transform: translateY(10px);
+}
+
+.attribution a {
+    color: var(--White)
+}
